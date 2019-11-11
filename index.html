@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codejam Canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="header__inner">
+            <div class="header__col">
+                <button class="header__menu"></button>
+                <h1 class="header__title">CodeJam - Canvas</h1>
+            </div>
+            <div class="header__col">
+                <button class="header__more"></button>
+            </div>
+        </div>
+    </header>
+    <div class="page__body">
+        <div class="functional__panel">
+            <div class="tools__panel">
+                <ul class="tools__list">
+                    <li class="tools__item" data-tool="bucket"><img src="src/images/bucket.svg" alt="Bucket">Fill bucket</li>
+                    <li class="tools__item" data-tool="dropper"><img src="src/images/dropper.svg" alt="Dropper">Choose color</li>
+                    <li class="tools__item" data-tool="pencil"><img src="src/images/pencil.svg" alt="Pencil">Pencil</li>
+                    <li class="tools__item" data-tool="transform"><img src="src/images/transform.svg" alt="Transformation">Transform</li>
+                </ul>
+            </div>
+            <div class="tools__panel">
+                <ul class="tools__list">
+                    <li class="tools__item"> <div class="current__color"></div> Current color </li>
+                    <li class="tools__item line"> <div class="previous__color"></div> Previous color </li>
+                    <li class="tools__item" data-color="rgba(255, 0, 0, 255)"> <div class="red__color"></div> Red </li>
+                    <li class="tools__item" data-color="rgba(0, 0, 255, 255)"> <div class="blue__color"></div> Blue </li>
+                    <li class="tools__item" data-color="rgba(255, 255, 255, 255)"> <div class="white__color"></div> White </li>
+                </ul>
+            </div>
+        </div>
+
+        <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+
+        <div class="actions">
+            <div class="actions__items">
+                <button
+                    class="actions__item"
+                    data-type="pixels"
+                    data-url="./src/data/4x4.json"
+                >
+                    4x4
+                </button>
+                <button
+                    class="actions__item"
+                    data-type="pixels"
+                    data-url="./src/data/32x32.json"
+                >
+                    32x32
+                </button>
+                <button
+                    class="actions__item"
+                    data-type="image"
+                    data-url="./src/data/image.png"
+                >
+                    256x256
+                 </button>
+            </div>
+
+            <div class="info">
+                <span class="description">Information:</span>
+                <ul>
+                    <li><b>b</b> - bucket</li>
+                    <li><b>p</b> - pencil</li>
+                    <li><b>c</b> - color picker</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
