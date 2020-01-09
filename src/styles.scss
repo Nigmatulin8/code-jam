@@ -100,9 +100,25 @@ ul { padding: 0; }
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	background-color: #000000;
+
 	box-sizing: border-box;
-	border: 1px solid #444444;
+}
+
+.colorPalette {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: black;
+	border: none;
+	margin: -1px 0 0 -1px;
+}
+
+::-webkit-color-swatch {
+    border: 0;
+}
+
+::-moz-color-swatch {
+    border: 0;
 }
 
 .previous__color {
@@ -111,7 +127,6 @@ ul { padding: 0; }
 	border-radius: 50%;
 	background-color: lightgray;
 	box-sizing: border-box;
-	border: 1px solid #444444;
 }
 
 .line {
@@ -211,3 +226,58 @@ ul { padding: 0; }
 		}
 	}
 }
+
+.searchImg {
+	width: 512px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	box-sizing: border-box;
+
+	img {
+		width: 40px;
+		height: 40px;
+	}
+
+	input {
+		box-sizing: border-box;
+		width: 340px;
+		height: 40px;
+		outline: none;
+		border: none;
+		border-bottom: 1px solid lightgray; 
+		font-size: 24px;
+		//background: url('images/search.png') no-repeat scroll 40px 40px;
+	}
+}
+
+.btnControlls {
+	width: 100%;
+	margin: 15px auto 0;
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	width: 120px; 
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 13px;
+	font-family: $mainFont;
+	font-size: 14px;
+	margin: 0 10px;
+
+	img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.grayBtn, .clearCanvas {
+	font-weight: 500;
+}
+

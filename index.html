@@ -31,7 +31,9 @@
             </div>
             <div class="tools__panel">
                 <ul class="tools__list">
-                    <li class="tools__item"> <div class="current__color"></div> Current color </li>
+                    <li class="tools__item"> <div class="current__color">
+                        <input type="color" class="colorPalette"> 
+                    </div> Current color </li>
                     <li class="tools__item line"> <div class="previous__color"></div> Previous color </li>
                     <li class="tools__item" data-color="rgba(255, 0, 0, 255)"> <div class="red__color"></div> Red </li>
                     <li class="tools__item" data-color="rgba(0, 0, 255, 255)"> <div class="blue__color"></div> Blue </li>
@@ -40,8 +42,29 @@
             </div>
         </div>
 
-        <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+        <div>
+           <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
 
+            <div class="searchImg">
+                <img src="src/images/search.png" alt="Search">
+                <input type="text" class="imgToSearch">
+                <button class="getRandomImg button">
+                    <img src="src/images/img-icon.png" alt="Image">
+                    Get Image
+                </button>
+            </div> 
+            <div class="btnControlls">
+                <button class="button grayBtn">
+                    <img src="src/images/dropper.svg" alt="Dropper">
+                    Make Gray
+                </button>
+                <button class="button clearCanvas">
+                    <img src="src/images/clear.png" alt="Clear">
+                    Clear canvas
+                </button>
+            </div>
+        </div>
+            
         <div class="actions">
             <div class="actions__items">
                 <button
